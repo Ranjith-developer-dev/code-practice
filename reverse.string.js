@@ -21,3 +21,21 @@ function reverseString1(str) {
 }
 reverseString1("hello sandip");
 
+
+//we can do this also
+const str = "hello sandip"
+
+const reverse = str.split("").reverse().join('')
+console.log("🚀 ~ reverse:", reverse)
+
+
+//Reverse a string without changing the position
+
+function reverseString(str) {
+    return str.split("").reverse().join("").split(" ").reverse().join(" ")
+}
+
+const posreverse = reverseString("hello sandip")
+
+console.log("🚀 ~ posreverse:", posreverse)
+
