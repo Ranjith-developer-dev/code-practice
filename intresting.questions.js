@@ -79,3 +79,24 @@ const num = async () => {
 num()
 
 console.log("--------------------------------------------------");
+
+function getPersonInfo(one, two, three) {
+  console.log(one);
+  console.log(two);
+  console.log(three);
+}
+
+const person = 'Lydia';
+const age = 21;
+
+getPersonInfo`${person} is ${age} years old`;
+
+console.log("--------------------------------------------------");
+
+const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+
+// Answer:
+// If you have two keys with the same name, the key will be replaced. It will still be in its first position, but with the last specified value.
+
+console.log("--------------------------------------------------");
