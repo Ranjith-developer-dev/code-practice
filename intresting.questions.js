@@ -100,3 +100,14 @@ console.log(obj);
 // If you have two keys with the same name, the key will be replaced. It will still be in its first position, but with the last specified value.
 
 console.log("--------------------------------------------------");
+
+const a = {};
+const b = { key: 'b' };
+const c = { key: 'c' };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+
+console.log("--------------------------------------------------");
