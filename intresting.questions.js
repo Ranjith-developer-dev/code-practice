@@ -63,8 +63,19 @@ Person.prototype.getFullName = function () {
   return `${this.firstName} ${this.lastName}`;
 };
 const member = new Person('Lydia', 'Hallie');
+console.log("🚀 ~ member:", member)
 
 
 console.log(member.getFullName());
+
+console.log("--------------------------------------------------");
+
+const num = async () => {
+  let number = 0;
+  console.log(number++);
+  console.log(++number);
+  console.log(number);
+}
+num()
 
 console.log("--------------------------------------------------");
