@@ -151,3 +151,15 @@ if (!typeof randomValue === "string") {
 
 console.log("--------------------------------------------------");
 
+const fruit = ['🍌', '🍊', '🍎']
+
+const sliceCheck = fruit.slice(0, 1)
+
+console.log("🚀 ~ sliceCheck:", sliceCheck)
+
+fruit.splice(0, 1)
+fruit.unshift('🍇')
+
+console.log(fruit)
+
+console.log("--------------------------------------------------");
