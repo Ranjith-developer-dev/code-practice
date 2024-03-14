@@ -186,6 +186,21 @@ add(4)(5)(6);
 
 console.log("--------------------------------------------------");
 
+const person2 = {
+  name: 'Lydia',
+  age: 21,
+};
+
+const changeAge = (x = { ...person2 }) => (x.age += 1);
+const changeAgeAndName = (x = { ...person2 }) => {
+  x.age += 1;
+  x.name = 'Sarah';
+};
+
+changeAge(person2);
+changeAgeAndName();
+
+console.log(person2);
 
 console.log("--------------------------------------------------");
 
