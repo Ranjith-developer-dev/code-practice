@@ -209,6 +209,14 @@ console.log(`${(x => x)('I love')} to program`);
 
 console.log("--------------------------------------------------");
 
+const food = ['🍕', '🍫', '🥑', '🍔'];
+const info = { favoriteFood: food[0] };
+
+info.favoriteFood = '🍝';
+
+console.log("🚀 ~ info:", info)
+
+console.log(food);
 
 console.log("--------------------------------------------------");
 
