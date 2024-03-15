@@ -250,6 +250,12 @@ for (let i = 0; i < array.length; i++) {
 
 console.log("--------------------------------------------------");
 
+// Immediately Invoked Function Expression (IIFE):
+// A function that is executed immediately after it's created.
+
+(function () {
+  // Code here
+})();
 
 console.log("--------------------------------------------------");
 
