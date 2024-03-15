@@ -225,6 +225,28 @@ You should${'' && `n't`} see a therapist after so much JavaScript lol`;
 
 console.log("--------------------------------------------------");
 
+//Multidimensional Array
+
+const array = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]
+
+//To Access individual array elements
+console.log(array[0][1]); // result: 2
+
+//To Access multidimensional array elements
+console.log(array[2][2]); // result: 9
+
+// Iterating through elements in a 2D array using nested loops
+console.log("\nIterating through elements in a 2D array:");
+
+for (let i = 0; i < array.length; i++) {
+  for (let j = 0; j < array[i].length; j++) {
+    console.log(array[i][j]);
+  }
+}
 
 console.log("--------------------------------------------------");
 
