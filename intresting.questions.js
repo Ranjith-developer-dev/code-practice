@@ -259,3 +259,15 @@ console.log("--------------------------------------------------");
 
 console.log("--------------------------------------------------");
 
+//Dynamic Function Names
+
+const functionName = "sayHello";
+const obj1 = {
+  [functionName](name) {
+    console.log("Hello, " + name + "!");
+  },
+};
+
+obj1[functionName]("John");
+
+console.log("--------------------------------------------------");
