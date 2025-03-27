@@ -1,5 +1,18 @@
 {
-  "dependencies": {
-    "git": "^0.1.5"
-  }
+    "name": "code-practice",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": " concurrently \"npx tsc --watch\" \"nodemon -q dist/array.occurence.js\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "concurrently": "^8.2.2",
+        "taskscheduler_bitcot": "^1.0.0",
+        "typescript": "^5.3.3"
+    }
 }
