@@ -38,7 +38,7 @@ const calculate = function (logic, radius) {
 // the above Higher order function is looks similar to map function right ?? - Hope we can recreate map function now
 
 //EX
-console.log(radius.map(areaFormula));
+// console.log(radius.map(areaFormula));
 
 //To achieve same behaviors we need to use prototype
 
@@ -51,4 +51,52 @@ Array.prototype.calculate = function (logic) {
 };
 
 //Same like map
-console.log(radius.calculate(areaFormula));
+// console.log(radius.calculate(areaFormula));
+
+// Reduce
+
+//sum example
+
+const arr = [2, 4, 6, 8];
+
+function findSum(arr) {
+    let sum = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+    }
+    return sum;
+}
+
+console.log(findSum(arr));
+
+// Here reduce take place you can see reduce has two parameters one is accumulator and current
+// --> from above example acc is meant to sum and current is meant to arr[i]
+
+const sumOfArray = arr.reduce(function (sum, cur) {
+    sum = sum + cur;
+    return sum;
+}, 0); // 0  is a initial value same like sum = 0
+
+console.log(sumOfArray);
+
+//lets play with another example
+
+const users = [
+    { name: "ranjith", age: 26 },
+    { name: "suman", age: 26 },
+    { name: "barani", age: 29 },
+];
+
+//Need to find a age with count { 26:2, 29:1}
+
+const output = users.reduce(function (acc, cur) {
+    if (acc[cur.age]) {
+        acc[cur.age] = ++acc[cur.age];
+    } else {
+        acc[cur.age] = 1;
+    }
+
+    return acc;
+}, {}); //why object? - because the desired output needs to be in object
+console.log(output);
