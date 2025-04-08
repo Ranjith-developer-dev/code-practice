@@ -2,7 +2,7 @@
 
 //create a function to calculate area
 const radius = [2, 5, 7, 8];
-
+debugger;
 const area = function () {
     const output = [];
 
@@ -100,3 +100,38 @@ const output = users.reduce(function (acc, cur) {
     return acc;
 }, {}); //why object? - because the desired output needs to be in object
 console.log(output);
+
+// Counting occurrences of elements
+
+const words = ["apple", "banana", "apple", "orange", "banana", "banana"];
+
+const wordCount = new Map();
+
+words.forEach((word) => wordCount.set(word, (wordCount.get(word) || 0) + 1));
+
+console.log("🚀 ~ wordCount:", wordCount);
+
+const person = { name: "Alice", age: 25 };
+for (let key in person) {
+    console.log(key, person[key]);
+}
+
+//Every
+const numbers = [2, 4, 6, 8];
+const allEven = numbers.every((num) => num % 2 === 0);
+console.log(allEven); // Output: true
+
+const obj = { name: "Alice" };
+
+console.log(obj + " is here!");
+
+//5. Customizing toString()
+
+const person1 = {
+    name: "ranjith",
+    toString() {
+        return this.name;
+    },
+};
+
+console.log(person1 + " is here!");
