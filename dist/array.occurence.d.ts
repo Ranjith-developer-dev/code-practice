@@ -1,2 +1,2 @@
-declare const occurenceResult: boolean;
-declare function uniqueOccurrences(arr: number[]): boolean;
+declare const occurenceResult: any;
+declare function uniqueOccurrences(arr: number[]): any;

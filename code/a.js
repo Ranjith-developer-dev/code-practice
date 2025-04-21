@@ -16,3 +16,4 @@ if (String(true)) {
 }
 
 console.log( typeof total); // Outputs "0.0"
+
