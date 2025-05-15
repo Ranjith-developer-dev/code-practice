@@ -1,7 +1,5 @@
-function multiply(number1, number2) {
-  if (number2 !== undefined) {
-    return number1 * number2;
-  }
+function multiply(number1) {
+
   return function doMultiply(number2) {
     return number1 * number2;
   };

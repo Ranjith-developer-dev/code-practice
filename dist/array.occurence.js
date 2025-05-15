@@ -12,6 +12,6 @@ function uniqueOccurrences(arr) {
         }
         occurenceSet.add(count);
     }
-    return occurenceSet;
+    return true;
 }
 //# sourceMappingURL=array.occurence.js.map

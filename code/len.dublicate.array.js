@@ -1,8 +1,8 @@
 let array = [1, 3, 5, 2, 1, 6, 5];
 
 // check uniquearray
-const uniqueArray = [...new Set(array)]
+const uniqueArray = [...new Set(array)];
 
-let dublicate = uniqueArray.map((value) => [value, array.filter(str => str === value).length])
+let dublicate = uniqueArray.map((value) => [value, array.filter((num) => num === value).length]);
 
-console.log("🚀 ~ dublicate:", dublicate)
+console.log("🚀 ~ dublicate:", dublicate);

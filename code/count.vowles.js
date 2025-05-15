@@ -13,3 +13,5 @@ function countVowles(str) {
 
 const count = countVowles('Ranjith')
 console.log("🚀 ~ count:", count)
+
+

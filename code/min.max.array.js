@@ -17,9 +17,9 @@ const min = array.reduce((cur, acc) => {
 console.log("🚀 ~ min ~ min:", min)
 
 
-const max1 = array.reduce((curval, nextval) => {
+const max1 = array.reduce((cur, acc) => {
 
-    return curval > nextval ? curval : nextval;
+    return cur > acc ? cur : acc;
 });
 
 console.log("🚀 ~ max1 ~ max1:", max1)

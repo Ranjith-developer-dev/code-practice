@@ -1,7 +1,18 @@
-const str1 = 'Sandip'
-const str2 = 'pidnaS'
-const st1 = str1.split('')
-const st2 = str2.split('')
-const item = st1.filter((v) => !st2.includes(v))
-const result = item.length === 0 ? 'Anagram' : 'Not anagram' + ' Difference - ' + item;
-console.log(result)
+function isAnagram(str1, str2) {
+    const normalize = (str) => str.toLowerCase().split("").sort().join("");
+
+    const sortedStr1 = normalize(str1);
+    const sortedStr2 = normalize(str2);
+
+    if (sortedStr1 === sortedStr2) {
+        return "Anagram";
+    } else {
+        return `Not anagram. Difference - ${sortedStr1} vs ${sortedStr2}`;
+    }
+}
+
+const result = isAnagram("Sandip", "pidnaS");
+console.log(result);
+
+
+

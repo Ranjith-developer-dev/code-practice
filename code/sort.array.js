@@ -1,4 +1,4 @@
-console.log(sortingAsc([5, 9, 2, 6, 0, 12, 4, 88]))
+console.log(sortingAsc([5, 9, 2, 6, 0, 12, 4, 88]));
 //ascending
 function sortingAsc(arr) {
     let temp = [];
@@ -11,10 +11,11 @@ function sortingAsc(arr) {
             }
         }
     }
-    return arr
+    return arr;
 }
+
 //descending
-console.log(sortingDesc([5, 9, 2, 6, 0, 12, 4, 88]))
+console.log(sortingDesc([5, 9, 2, 6, 0, 12, 4, 88]));
 function sortingDesc(arr) {
     let temp = [];
     for (let i = 0; i < arr.length; i++) {
@@ -26,15 +27,19 @@ function sortingDesc(arr) {
             }
         }
     }
-    return arr
+    return arr;
 }
 
-// can we do like this 
+// can we do like this
 
 const array = [5, 9, 2, 6, 0, 12, 4, 88];
 
-const sortAsc = array.sort((a, b) => { return a - b })
-console.log("🚀 ~ sortAsc:", sortAsc)
+const sortAsc = array.sort((a, b) => {
+    return a - b;
+});
+console.log("🚀 ~ sortAsc:", sortAsc);
 
-const sortDesc = array.sort((a, b) => { return b - a })
-console.log("🚀 ~ sortDesc:", sortDesc)
+const sortDesc = array.sort((a, b) => {
+    return b - a;
+});
+console.log("🚀 ~ sortDesc:", sortDesc);

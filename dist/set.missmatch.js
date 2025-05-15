@@ -1,9 +1,12 @@
 function findErrorNums(nums) {
     const n = nums.length;
     const expectedSum = (n * (n + 1)) / 2;
+    console.log("🚀 ~ findErrorNums ~ expectedSum:", expectedSum);
     console.log(">>>>>>>>>>>>>>", [...new Set(nums)]);
     const actualSum = [...new Set(nums)].reduce((sum, num) => sum + num, 0);
+    console.log("🚀 ~ findErrorNums ~ actualSum:", actualSum);
     const missingNumber = expectedSum - actualSum;
+    console.log("🚀 ~ findErrorNums ~ missingNumber:", missingNumber);
     const numSet = new Set();
     let duplicateNumber = 0;
     for (const num of nums) {
